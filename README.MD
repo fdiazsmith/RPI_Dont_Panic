@@ -7,15 +7,12 @@ ____/  \___/ _| \_|      _|       _|   _/    _\ _| \_| ___| \____|     _)
 
 ## Easy 4-step Raspberry Pi Setup 🔧
 
-
 *This guide will help you prepare and setup a Raspberry Pi in 4 easy steps*
 
-<img align="left" width="15" src="https://svgsilh.com/svg/2052171.svg">
-&nbsp;&nbsp;
+<img align="left" width="18" src="https://svgsilh.com/svg/2052171.svg">
 Download the latest version of [Raspbian](https://www.raspberrypi.org/downloads/raspbian/) and flash your micro SD card with [Etcher](https://etcher.io/)
 
-<img align="left" width="15" src="https://svgsilh.com/svg/2052150.svg">
-&nbsp;&nbsp;
+<img align="left" width="18" src="https://svgsilh.com/svg/2052150.svg">
 Paste the files from [setup](./setup) and edit boot files:
 
 ```
@@ -31,12 +28,10 @@ Paste the files from [setup](./setup) and edit boot files:
 
 >More [info](https://www.thepolyglotdeveloper.com/2016/06/connect-raspberry-pi-zero-usb-cable-ssh/) on ssh over USB
 
-<img align="left" width="15" src="https://svgsilh.com/svg/2052130.svg">
-&nbsp;&nbsp;
+<img align="left" width="18" src="https://svgsilh.com/svg/2052130.svg">
 In terminal ssh into the pi: ```sudo ssh pi@raspberrypi.local```<br>*Default password is 'raspberry'. To change password use the `passwd` command*
 
-<img align="left" width="15" src="https://svgsilh.com/svg/2052105.svg">
-&nbsp;&nbsp;
+<img align="left" width="18" src="https://svgsilh.com/svg/2052105.svg">
 Get your PI up to speed:
 ```
 sudo curl -s https://raw.githubusercontent.com/fdiazsmith/RPI_Dont_Panic/master/basic_setup.sh -o basic_setup.sh && bash basic_setup.sh && rm basic_setup.sh
@@ -51,21 +46,9 @@ here we should have a bash file that you can curl and do everything else
   * node ?
   * reboot
 
-**<span style="font-size: 25px;">That is it!</span>**
-
-
-
-
-
-
-
-
-
-
-
+### That is it!
 
 ---
-
 
 just notes eventually they will go away
 
