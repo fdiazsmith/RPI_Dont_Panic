@@ -5,15 +5,17 @@ __ \    _ \    \  |  ) __ __|       _ \    \      \  | _ _|   ___|      |
 ____/  \___/ _| \_|      _|       _|   _/    _\ _| \_| ___| \____|     _)
 ```
 
-## Easy 4-step Raspberry Pi Setup 🔧
+### Easy 4-step Raspberry Pi Setup 🔧
 
 *This guide will help you prepare and setup a Raspberry Pi in 4 easy steps*
 
-<img align="left" width="18" src="https://svgsilh.com/svg/2052171.svg">
-Download the latest version of [Raspbian](https://www.raspberrypi.org/downloads/raspbian/) and flash your micro SD card with [Etcher](https://etcher.io/)
+---
 
-<img align="left" width="18" src="https://svgsilh.com/svg/2052150.svg">
-Paste the files from [setup](./setup) and edit boot files:
+**1.** Download the latest version of [Raspbian](https://www.raspberrypi.org/downloads/raspbian/) and flash your micro SD card with [Etcher](https://etcher.io/)
+
+---
+
+**2.** Paste the files from [setup](./setup) and edit files:
 
 ```
 <YOUR COMPUTER>/
@@ -26,24 +28,27 @@ Paste the files from [setup](./setup) and edit boot files:
 │   └── wpa_supplicant.conf     <-- add and edit this one with your wifi settings
 ```
 
->More [info](https://www.thepolyglotdeveloper.com/2016/06/connect-raspberry-pi-zero-usb-cable-ssh/) on ssh over USB
+>*More [info](https://www.thepolyglotdeveloper.com/2016/06/connect-raspberry-pi-zero-usb-cable-ssh/) on ssh over USB*
 
-<img align="left" width="18" src="https://svgsilh.com/svg/2052130.svg">
-In terminal ssh into the pi: ```sudo ssh pi@raspberrypi.local```<br>*Default password is 'raspberry'. To change password use the `passwd` command*
+---
 
-<img align="left" width="18" src="https://svgsilh.com/svg/2052105.svg">
-Get your PI up to speed:
+**3.** In terminal ssh into the pi: ```sudo ssh pi@raspberrypi.local```<br>*Default password is 'raspberry'. To change password use the `passwd` command*
+
+---
+
+**4.** Get your PI up to speed:
+
 ```
 sudo curl -s https://raw.githubusercontent.com/fdiazsmith/RPI_Dont_Panic/master/basic_setup.sh -o basic_setup.sh && bash basic_setup.sh && rm basic_setup.sh
 ```
-> This [post](https://stackoverflow.com/questions/5735666/execute-bash-script-from-url) explains how to download and execute a bash script....
+
+>This [post](https://stackoverflow.com/questions/5735666/execute-bash-script-from-url) explains how to download and execute a bash script....
 here we should have a bash file that you can curl and do everything else
   * update and upgrade
-  * install git
+  * install git1
   * install basic [vimrc](https://github.com/amix/vimrc)
-  * install [netatalk](http://netatalk.sourceforge.net/)
-  * other libraries that we want?
-  * node ?
+  * (opt.) install [netatalk](http://netatalk.sourceforge.net/)
+  * (opt.) install node
   * reboot
 
 ### That is it!
