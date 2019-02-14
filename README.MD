@@ -1,33 +1,32 @@
-<style>
-.no {
-  font-size: 25px;
-  font-weight: bold;
-}
-</style>
-# Don't Pannic!
-
+```
+    __ \    _ \    \  |  ) __ __|       _ \    \      \  | _ _|   ___|      |
+    |   |  |   |    \ | /     |        |   |  _ \      \ |   |   |          |
+    |   |  |   |  |\  |       |        ___/  ___ \   |\  |   |   |         _|
+    ____/  \___/ _| \_|      _|       _|   _/    _\ _| \_| ___| \____|     _)
+```
 ## Easy Raspberry Pi Setup 🔧
+
 
 How to prepare and setup a Raspberry Pi in 4 easy steps:
 
-<span class='no'>1.</span> Download the latest version of [Raspbian](https://www.raspberrypi.org/downloads/raspbian/) and flash your micro SD card with [Etcher](https://etcher.io/)
+**<span style="font-size: 25px;">1.</span>** Download the latest version of [Raspbian](https://www.raspberrypi.org/downloads/raspbian/) and flash your micro SD card with [Etcher](https://etcher.io/)
 
-<span class='no'>2.</span> Paste files from [setup](./setup) and edit boot files:
+**<span style="font-size: 25px;">2.</span>** Paste the files from [setup](./setup) and edit boot files:
 ```
-<YOURCOMPUTER>/
+<YOUR COMPUTER>/
 ├── boot/
 │   ├── config.txt     <-- in a new line add: dtoverlay=dwc2
 │   ├── cmdline.txt    <-- after `rootwait` add a space and paste: modules-load=dwc2,g_ether
 │   ├── ...
 
 │   └── ssh                     <-- add this one
-│   └── wpa_supplicant.conf     <-- edit and add this one
+│   └── wpa_supplicant.conf     <-- add and edit this one with your wifi settings
 ```
 >More [info](https://www.thepolyglotdeveloper.com/2016/06/connect-raspberry-pi-zero-usb-cable-ssh/) on ssh over USB
 
-<span class='no'>3.</span>  In terminal ssh into the pi: ```sudo ssh pi@raspberrypi.local```<br>*Default password is 'raspberry'. To change password use the `passwd` command*
+**<span style="font-size: 25px;">3.</span>**  In terminal ssh into the pi: ```sudo ssh pi@raspberrypi.local```<br>*Default password is 'raspberry'. To change password use the `passwd` command*
 
-<span class='no'>4.</span>  Get your PI up to speed:
+**<span style="font-size: 25px;">4.</span>**  Get your PI up to speed:
 ```
 sudo curl -s https://raw.githubusercontent.com/fdiazsmith/RPI_Dont_Panic/master/basic_setup.sh -o basic_setup.sh && bash basic_setup.sh && rm basic_setup.sh
 ```
