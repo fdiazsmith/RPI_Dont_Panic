@@ -17,6 +17,7 @@ cat << EOF
 This will take care of installing the basic stuff you would expect
 but we would like to ask a few basic questions first.
 
+
 EOF
 
 function getUserInput {
@@ -37,6 +38,10 @@ function getUserInput {
 }
 
 function installVimRc {
+cat << EOF
+Installing VIM...
+
+EOF
 # first install actual vim pi only comes with vi
 #apt-get install vim
 
@@ -44,6 +49,10 @@ function installVimRc {
 curl -s $REMOTE_VIMRC | cat >> $VIMRC
 }
 function installMOTD {
+cat << EOF
+Installing MOTD...
+
+EOF
 # Download file and write to file (I guess this could also use the -o flag of curl )
 curl -s $REMOTE_MOTD | cat >> $MOTD
 # if we wanted to get fancy this could fisrt check if the alias exist and repalce it
