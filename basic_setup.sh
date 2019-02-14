@@ -8,6 +8,8 @@ VIMRC="./.vimrc"
 MOTD="./.MOTD"
 BASHRC="./.bashrc"
 
+REMOTE_VIMRC="https://raw.githubusercontent.com/fdiazsmith/RPI_Dont_Panic/master/.vimrc"
+
 
 ## this is a simple way to show a multiline echo
 cat << EOF
@@ -38,7 +40,7 @@ function installVimRc {
 #apt-get install vim
 
 ## to simplify this file these could algo be external files and have them
-curl -s https://raw.githubusercontent.com/fdiazsmith/basic_PI/master/basic_setup.sh | cat >> $VIMRC
+curl -s  | cat >> $VIMRC
 }
 function installMOTD {
 cat >$MOTD <<EOL
