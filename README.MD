@@ -21,7 +21,7 @@ How to prepare and setup a Raspberry Pi for this project:
 
 This [post](https://stackoverflow.com/questions/5735666/execute-bash-script-from-url) explains how to download and execute a bash script
 ```
-bash <(curl -s http://mywebsite.com/myscript.txt)
+bash <(curl -s https://raw.githubusercontent.com/fdiazsmith/basic_PI/master/basic_setup.sh)
 ```
 > here we should have a bash file that you can curl and do everything else
   * update and upgrade
