@@ -1,13 +1,16 @@
-```
-    __ \    _ \    \  |  ) __ __|       _ \    \      \  | _ _|   ___|      |
-    |   |  |   |    \ | /     |        |   |  _ \      \ |   |   |          |
-    |   |  |   |  |\  |       |        ___/  ___ \   |\  |   |   |         _|
-    ____/  \___/ _| \_|      _|       _|   _/    _\ _| \_| ___| \____|     _)
-```
-## Easy Raspberry Pi Setup 🔧
+<pre style='background: #fff;'>
+<span style='font-family: monospace; font-weight: 700; white-space:pre; color:blue;' >
+__ \    _ \    \  |  ) __ __|       _ \    \      \  | _ _|   ___|      |
+|   |  |   |    \ | /     |        |   |  _ \      \ |   |   |          |
+|   |  |   |  |\  |       |        ___/  ___ \   |\  |   |   |         _|
+____/  \___/ _| \_|      _|       _|   _/    _\ _| \_| ___| \____|     _)
+</span>
+</pre>
+
+## Easy 4-step Raspberry Pi Setup 🔧
 
 
-How to prepare and setup a Raspberry Pi in 4 easy steps:
+*This guide will help you prepare and setup a Raspberry Pi in 4 easy steps*
 
 **<span style="font-size: 25px;">1.</span>** Download the latest version of [Raspbian](https://www.raspberrypi.org/downloads/raspbian/) and flash your micro SD card with [Etcher](https://etcher.io/)
 
@@ -40,7 +43,7 @@ here we should have a bash file that you can curl and do everything else
   * node ?
   * reboot
 
-That is it!
+**<span style="font-size: 25px;">That is it!</span>**
 
 
 
@@ -52,7 +55,8 @@ That is it!
 
 
 
-+++++++++++++++++++++++++++++++++++++
+
+---
 
 
 just notes eventually they will go away
