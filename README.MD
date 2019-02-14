@@ -1,20 +1,22 @@
-<pre style='background: #fff;'>
-<span style='font-family: monospace; font-weight: 700; white-space:pre; color:blue;' >
+```
 __ \    _ \    \  |  ) __ __|       _ \    \      \  | _ _|   ___|      |
 |   |  |   |    \ | /     |        |   |  _ \      \ |   |   |          |
 |   |  |   |  |\  |       |        ___/  ___ \   |\  |   |   |         _|
 ____/  \___/ _| \_|      _|       _|   _/    _\ _| \_| ___| \____|     _)
-</span>
-</pre>
+```
 
 ## Easy 4-step Raspberry Pi Setup 🔧
 
 
 *This guide will help you prepare and setup a Raspberry Pi in 4 easy steps*
 
-**<span style="font-size: 25px;">1.</span>** Download the latest version of [Raspbian](https://www.raspberrypi.org/downloads/raspbian/) and flash your micro SD card with [Etcher](https://etcher.io/)
+<img align="left" width="15" src="https://svgsilh.com/svg/2052171.svg">
+&nbsp;&nbsp;
+Download the latest version of [Raspbian](https://www.raspberrypi.org/downloads/raspbian/) and flash your micro SD card with [Etcher](https://etcher.io/)
 
-**<span style="font-size: 25px;">2.</span>** Paste the files from [setup](./setup) and edit boot files:
+<img align="left" width="15" src="https://svgsilh.com/svg/2052150.svg">
+&nbsp;&nbsp;
+Paste the files from [setup](./setup) and edit boot files:
 ```
 <YOUR COMPUTER>/
 ├── boot/
@@ -27,9 +29,13 @@ ____/  \___/ _| \_|      _|       _|   _/    _\ _| \_| ___| \____|     _)
 ```
 >More [info](https://www.thepolyglotdeveloper.com/2016/06/connect-raspberry-pi-zero-usb-cable-ssh/) on ssh over USB
 
-**<span style="font-size: 25px;">3.</span>**  In terminal ssh into the pi: ```sudo ssh pi@raspberrypi.local```<br>*Default password is 'raspberry'. To change password use the `passwd` command*
+<img align="left" width="15" src="https://svgsilh.com/svg/2052130.svg">
+&nbsp;&nbsp;
+In terminal ssh into the pi: ```sudo ssh pi@raspberrypi.local```<br>*Default password is 'raspberry'. To change password use the `passwd` command*
 
-**<span style="font-size: 25px;">4.</span>**  Get your PI up to speed:
+<img align="left" width="15" src="https://svgsilh.com/svg/2052105.svg">
+&nbsp;&nbsp;
+Get your PI up to speed:
 ```
 sudo curl -s https://raw.githubusercontent.com/fdiazsmith/RPI_Dont_Panic/master/basic_setup.sh -o basic_setup.sh && bash basic_setup.sh && rm basic_setup.sh
 ```
