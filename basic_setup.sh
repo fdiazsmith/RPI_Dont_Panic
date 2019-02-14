@@ -48,6 +48,7 @@ EOF
 # Download file and write to file (I guess this could also use the -o flag of curl )
 curl -s $REMOTE_VIMRC | cat >> $VIMRC
 }
+
 function installMOTD {
 cat << EOF
 Installing MOTD...
@@ -55,10 +56,19 @@ Installing MOTD...
 EOF
 # Download file and write to file (I guess this could also use the -o flag of curl )
 curl -s $REMOTE_MOTD | cat >> $MOTD
+## we need to make sure it is executable
+sudo chmod 755 /etc/motd.tcl
 # if we wanted to get fancy this could fisrt check if the alias exist and repalce it
 echo 'alias info="bash '$MOTD'"' >> $BASHRC
 }
 
+function installNode {
+cat << EOF
+Installing Node...
+
+EOF
+
+}
 
 getUserInput
 
