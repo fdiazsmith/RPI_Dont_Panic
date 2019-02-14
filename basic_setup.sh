@@ -1,3 +1,4 @@
+#!/usr/bin/env bash
 echo "Starting basic set up"
 INSTALL_NODE=false
 INSTALL_GIT=true
