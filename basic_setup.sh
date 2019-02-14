@@ -9,6 +9,7 @@ MOTD="./.MOTD"
 BASHRC="./.bashrc"
 
 REMOTE_VIMRC="https://raw.githubusercontent.com/fdiazsmith/RPI_Dont_Panic/master/.vimrc"
+REMOTE_MOTD="https://raw.githubusercontent.com/fdiazsmith/RPI_Dont_Panic/master/.MOTD"
 
 
 ## this is a simple way to show a multiline echo
@@ -39,14 +40,12 @@ function installVimRc {
 # first install actual vim pi only comes with vi
 #apt-get install vim
 
-## to simplify this file these could algo be external files and have them
-curl -s  | cat >> $VIMRC
+# Download file and write to file (I guess this could also use the -o flag of curl )
+curl -s $REMOTE_VIMRC | cat >> $VIMRC
 }
 function installMOTD {
-cat >$MOTD <<EOL
-
-EOL
-
+# Download file and write to file (I guess this could also use the -o flag of curl )
+curl -s $REMOTE_MOTD | cat >> $MOTD
 # if we wanted to get fancy this could fisrt check if the alias exist and repalce it
 echo 'alias info="bash '$MOTD'"' >> $BASHRC
 }
@@ -54,9 +53,9 @@ echo 'alias info="bash '$MOTD'"' >> $BASHRC
 
 getUserInput
 
-# installVimRc
+installVimRc
 #
-# installMOTD
+installMOTD
 
 ## things that don't need a function
 # apt-get update
