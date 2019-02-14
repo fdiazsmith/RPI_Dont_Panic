@@ -17,6 +17,7 @@ Download the latest version of [Raspbian](https://www.raspberrypi.org/downloads/
 <img align="left" width="15" src="https://svgsilh.com/svg/2052150.svg">
 &nbsp;&nbsp;
 Paste the files from [setup](./setup) and edit boot files:
+
 ```
 <YOUR COMPUTER>/
 ├── boot/
@@ -27,6 +28,7 @@ Paste the files from [setup](./setup) and edit boot files:
 │   └── ssh                     <-- add this one
 │   └── wpa_supplicant.conf     <-- add and edit this one with your wifi settings
 ```
+
 >More [info](https://www.thepolyglotdeveloper.com/2016/06/connect-raspberry-pi-zero-usb-cable-ssh/) on ssh over USB
 
 <img align="left" width="15" src="https://svgsilh.com/svg/2052130.svg">
