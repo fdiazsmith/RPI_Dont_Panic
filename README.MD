@@ -19,6 +19,10 @@ How to prepare and setup a Raspberry Pi for this project:
 
 4. In terminal ssh into the pi: ```sudo ssh pi@raspberrypi.local```<br>*Default password is 'raspberry'. To change password use the 'passwd' command*
 
+This [post](https://stackoverflow.com/questions/5735666/execute-bash-script-from-url) explains how to download and execute a bash script
+```
+bash <(curl -s http://mywebsite.com/myscript.txt)
+```
 > here we should have a bash file that you can curl and do everything else
   * update and upgrade
   * install git
