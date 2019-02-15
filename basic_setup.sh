@@ -22,16 +22,16 @@ EOF
 
 function getUserInput {
   # while true; do
-      read -p "Do you wish to install git?" yn
+      read -p "Do you wish to install git? (y/n)" yn
       case $yn in
           [Yy]* ) INSTALL_GIT=true; echo "got it" ; break;;
-          [Nn]* ) INSTALL_GIT=false; echo "cool you do it"  break;;
+          [Nn]* ) INSTALL_GIT=false; echo "cool you do it" ; break;;
           * ) echo "Please answer yes or no.";;
       esac
-      read -p "Do you wish to install node?" yn
+      read -p "Do you wish to install node? (y/n)" yn
       case $yn in
           [Yy]* ) INSTALL_NODE=true;echo "got it" ; break;;
-          [Nn]* ) INSTALL_NODE=false;echo "cool you do it"  break;;
+          [Nn]* ) INSTALL_NODE=false;echo "cool you do it" ; break;;
           * ) echo "Please answer yes or no.";;
       esac
   # done
@@ -72,8 +72,22 @@ EOF
 
 getUserInput
 
-installVimRc
-#
+if $INSTALL_NODE; then
+cat << EOF
+Installing node...
+
+EOF
+  installVimRc
+fi
+
+if $INSTALL_GIT; then
+cat << EOF
+Installing git...
+
+EOF
+
+fi
+
 installMOTD
 
 ## things that don't need a function

@@ -1,20 +1,22 @@
-<pre style='background: #fff;'>
-<span style='font-family: monospace; font-weight: 700; white-space:pre; color:blue;' >
+```
 __ \    _ \    \  |  ) __ __|       _ \    \      \  | _ _|   ___|      |
 |   |  |   |    \ | /     |        |   |  _ \      \ |   |   |          |
 |   |  |   |  |\  |       |        ___/  ___ \   |\  |   |   |         _|
 ____/  \___/ _| \_|      _|       _|   _/    _\ _| \_| ___| \____|     _)
-</span>
-</pre>
+```
 
-## Easy 4-step Raspberry Pi Setup 🔧
-
+### Easy 4-step Raspberry Pi Setup 🔧
 
 *This guide will help you prepare and setup a Raspberry Pi in 4 easy steps*
 
-**<span style="font-size: 25px;">1.</span>** Download the latest version of [Raspbian](https://www.raspberrypi.org/downloads/raspbian/) and flash your micro SD card with [Etcher](https://etcher.io/)
+---
 
-**<span style="font-size: 25px;">2.</span>** Paste the files from [setup](./setup) and edit boot files:
+**1.** Download the latest version of [Raspbian](https://www.raspberrypi.org/downloads/raspbian/) and flash your micro SD card with [Etcher](https://etcher.io/)
+
+---
+
+**2.** Paste the files from [setup](./setup) and edit files:
+
 ```
 <YOUR COMPUTER>/
 ├── boot/
@@ -25,39 +27,33 @@ ____/  \___/ _| \_|      _|       _|   _/    _\ _| \_| ___| \____|     _)
 │   └── ssh                     <-- add this one
 │   └── wpa_supplicant.conf     <-- add and edit this one with your wifi settings
 ```
->More [info](https://www.thepolyglotdeveloper.com/2016/06/connect-raspberry-pi-zero-usb-cable-ssh/) on ssh over USB
 
-**<span style="font-size: 25px;">3.</span>**  In terminal ssh into the pi: ```sudo ssh pi@raspberrypi.local```<br>*Default password is 'raspberry'. To change password use the `passwd` command*
-
-**<span style="font-size: 25px;">4.</span>**  Get your PI up to speed:
-```
-sudo curl -s https://raw.githubusercontent.com/fdiazsmith/RPI_Dont_Panic/master/basic_setup.sh -o basic_setup.sh && bash basic_setup.sh && rm basic_setup.sh
-```
-> This [post](https://stackoverflow.com/questions/5735666/execute-bash-script-from-url) explains how to download and execute a bash script....
-here we should have a bash file that you can curl and do everything else
-  * update and upgrade
-  * install git
-  * install basic [vimrc](https://github.com/amix/vimrc)
-  * install [netatalk](http://netatalk.sourceforge.net/)
-  * other libraries that we want?
-  * node ?
-  * reboot
-
-**<span style="font-size: 25px;">That is it!</span>**
-
-
-
-
-
-
-
-
-
-
-
+>*More [info](https://www.thepolyglotdeveloper.com/2016/06/connect-raspberry-pi-zero-usb-cable-ssh/) on ssh over USB*
 
 ---
 
+**3.** In terminal ssh into the pi: ```sudo ssh pi@raspberrypi.local```<br>*Default password is 'raspberry'. To change password use the `passwd` command*
+
+---
+
+**4.** Get your PI up to speed:
+
+```
+sudo curl -s https://raw.githubusercontent.com/fdiazsmith/RPI_Dont_Panic/master/basic_setup.sh -o basic_setup.sh && bash basic_setup.sh && rm basic_setup.sh
+```
+
+>This [post](https://stackoverflow.com/questions/5735666/execute-bash-script-from-url) explains how to download and execute a bash script....
+here we should have a bash file that you can curl and do everything else
+  * update and upgrade
+  * install git1
+  * install basic [vimrc](https://github.com/amix/vimrc)
+  * (opt.) install [netatalk](http://netatalk.sourceforge.net/)
+  * (opt.) install node
+  * reboot
+
+### That is it!
+
+---
 
 just notes eventually they will go away
 
