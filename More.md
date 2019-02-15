@@ -29,3 +29,5 @@ Once it has finished writing the image to the SD card, you can remove it from yo
 ```bash
 sudo diskutil eject /dev/rdisk3
 ```
+
+[more info on how to do it in other operating systems](https://thepihut.com/blogs/raspberry-pi-tutorials/17789160-backing-up-and-restoring-your-raspberry-pis-sd-card)
