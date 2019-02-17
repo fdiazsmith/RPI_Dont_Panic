@@ -2,6 +2,7 @@
 echo "Starting basic set up"
 INSTALL_NODE=false
 INSTALL_GIT=true
+INSTALL_NETTALK=true
 
 # paths
 VIMRC="./.vimrc"
@@ -14,27 +15,41 @@ REMOTE_MOTD="https://raw.githubusercontent.com/fdiazsmith/RPI_Dont_Panic/master/
 
 ## this is a simple way to show a multiline echo
 cat << EOF
-This will take care of installing the basic stuff you would expect
+==================================================================
+Dont Panic! This will take care of installing the basic stuff you would expect
 but we would like to ask a few basic questions first.
-
+==================================================================
 
 EOF
 
 function getUserInput {
-  # while true; do
-      read -p "Do you wish to install git? (y/n)" yn
-      case $yn in
-          [Yy]* ) INSTALL_GIT=true; echo "got it" ; break;;
-          [Nn]* ) INSTALL_GIT=false; echo "cool you do it" ; break;;
-          * ) echo "Please answer yes or no.";;
-      esac
-      read -p "Do you wish to install node? (y/n)" yn
-      case $yn in
-          [Yy]* ) INSTALL_NODE=true;echo "got it" ; break;;
-          [Nn]* ) INSTALL_NODE=false;echo "cool you do it" ; break;;
-          * ) echo "Please answer yes or no.";;
-      esac
-  # done
+  while true; do
+    #GIT
+    read -p "Do you wish to install git? (y/n) " yn
+    case $yn in
+        [Yy]* ) INSTALL_GIT=true; echo "got it" ;break;;
+        [Nn]* ) INSTALL_GIT=false; echo "cool you do it" ; break;;
+        * ) echo "Please answer yes or no.";;
+    esac
+  done
+  while true; do
+    #NETTALK
+    read -p "Do you wish to install nettalk? (y/n) " yn
+    case $yn in
+      [Yy]* ) INSTALL_NODE=true;echo "got it" ;break;;
+      [Nn]* ) INSTALL_NODE=false;echo "cool you do it" ;break;;
+      * ) echo "Please answer yes or no.";;
+    esac
+  done
+  while true; do
+    #NODE
+    read -p "Do you wish to install node? (y/n) " yn
+    case $yn in
+      [Yy]* ) INSTALL_NODE=true;echo "got it" ;break;;
+      [Nn]* ) INSTALL_NODE=false;echo "cool you do it" ;break;;
+      * ) echo "Please answer yes or no.";;
+    esac
+  done
 }
 
 function installVimRc {
