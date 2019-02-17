@@ -45,6 +45,7 @@ sudo curl -s https://raw.githubusercontent.com/fdiazsmith/RPI_Dont_Panic/master/
 >This [post](https://stackoverflow.com/questions/5735666/execute-bash-script-from-url) explains how to download and execute a bash script....
 here we should have a bash file that you can curl and do everything else
   * update and upgrade
+  * (opt.)[instal python3](https://gist.github.com/SeppPenner/6a5a30ebc8f79936fa136c524417761d)
   * install git1
   * install basic [vimrc](https://github.com/amix/vimrc)
   * (opt.) install [netatalk](http://netatalk.sourceforge.net/)
