@@ -50,6 +50,8 @@ here we should have a bash file that you can curl and do everything else
   * install basic [vimrc](https://github.com/amix/vimrc)
   * (opt.) install [netatalk](http://netatalk.sourceforge.net/)
   * (opt.) install node
+  * install bash aliases
+  * [custom $PS1 in bash](http://bashrcgenerator.com/)
   * reboot
 
 ### That is it!

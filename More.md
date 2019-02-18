@@ -1,8 +1,13 @@
 # More things to know
 
+## Reference into shell scripting
+[write-shell-scripts](https://learn.adafruit.com/an-illustrated-guide-to-shell-magic-typing-less-and-doing-more/write-shell-scripts)
+
+[standard-i-o-pipes](https://learn.adafruit.com/basic-shell-magic/standard-i-o-pipes)
+
 ## How to create a copy of your PI's image
 
-Say you spend a lot of time and you have everything setup as you would like it. Nothing need to change, but you want to replicate it every where. Here is how to do it. 
+Say you spend a lot of time and you have everything setup as you would like it. Nothing need to change, but you want to replicate it every where. Here is how to do it.
 
 In Terminal, enter the following command to create a disc image (.dmg) of your SD Card in your home directory.
 ```bash
@@ -10,7 +15,7 @@ sudo dd if=/dev/disk1 of=~/SDCardBackup.dmg
  ```
 Wait until the SD card has been completely read; the command does not show any feedback, so wait for the command prompt to reappear in the terminal window once it is complete.
 
-Now if your need an exact copy, you can restore it exactly how it was. 
+Now if your need an exact copy, you can restore it exactly how it was.
 You have two options:
 
 1. You could use the ballena software we describe in the [README.md](./README.md) to write the image to a new card.
