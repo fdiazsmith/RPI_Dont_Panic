@@ -21,7 +21,16 @@ cat << EOF
 Dont Panic! This will take care of installing the basic stuff you would expect
 but we would like to ask a few basic questions first.
 ==================================================================
-
+Here is what is going to happen:
+                  - update and upgrade
+                  - install git
+                  - install .vimrc
+                  - install .bash_aliases
+                  - custom $PS1 in bash
+                  - (opt.) instal python3
+                  - (opt.) install netatalk
+                  - (opt.) install node
+                  - reboot
 EOF
 
 function getUserInput {
