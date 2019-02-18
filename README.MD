@@ -53,7 +53,8 @@ here we should have a bash file that you can curl and do everything else
   * install bash aliases
   * [custom $PS1 in bash](http://bashrcgenerator.com/)
   * reboot
-
+    * Maye just install [oh-my-zsh](https://escapologybb.com/oh-my-zsh/)    * Maye just install [oh-my-zsh](https://escapologybb.com/oh-my-zsh/)    * Maye just install [oh-my-zsh](https://escapologybb.com/oh-my-zsh/)    * Maye just install [oh-my-zsh](https://escapologybb.com/oh-my-zsh/)    * Maye just install [oh-my-zsh](https://escapologybb.com/oh-my-zsh/)  * Maye just install [oh-my-zsh](https://escapologybb.com/oh-my-zsh/)    * Maye just install
+    * [oh-my-zsh](https://escapologybb.com/oh-my-zsh/)  * Maye just install [oh-my-zsh](https://escapologybb.com/oh-my-zsh/)    * Maye just install [oh-my-zsh](https://escapologybb.com/oh-my-zsh/)
 ### That is it!
 
 ---
