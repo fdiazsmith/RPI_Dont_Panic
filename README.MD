@@ -55,7 +55,13 @@ here we should have a bash file that you can curl and do everything else
   * reboot
     * Maye just install [oh-my-zsh](https://escapologybb.com/oh-my-zsh/)    * Maye just install [oh-my-zsh](https://escapologybb.com/oh-my-zsh/)    * Maye just install [oh-my-zsh](https://escapologybb.com/oh-my-zsh/)    * Maye just install [oh-my-zsh](https://escapologybb.com/oh-my-zsh/)    * Maye just install [oh-my-zsh](https://escapologybb.com/oh-my-zsh/)  * Maye just install [oh-my-zsh](https://escapologybb.com/oh-my-zsh/)    * Maye just install
     * [oh-my-zsh](https://escapologybb.com/oh-my-zsh/)  * Maye just install [oh-my-zsh](https://escapologybb.com/oh-my-zsh/)    * Maye just install [oh-my-zsh](https://escapologybb.com/oh-my-zsh/)
+*  enable i2c    
+```sudo apt-get install -y python-smbus
+    sudo apt-get install -y i2c-tools```
+
+    and also enable[SPI](https://learn.adafruit.com/adafruits-raspberry-pi-lesson-4-gpio-setup/configuring-spi)
 ### That is it!
+
 
 ---
 
