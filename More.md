@@ -37,4 +37,24 @@ sudo diskutil eject /dev/rdisk3
 
 [more info on how to do it in other operating systems](https://thepihut.com/blogs/raspberry-pi-tutorials/17789160-backing-up-and-restoring-your-raspberry-pis-sd-card)
 [OOP in python]("https://python-textbok.readthedocs.io/en/1.0/Variables_and_Scope.html")
+
+## Cloning from your machine
+1 make sure your computer has ssh enabled. you can change this from system preferences > remote login
+2 git
+
+```
+git clone usr@computer.local:path/to/repo/.git
+```
+add upstream or pistream if you will, 
+
+so that both can receive and pull
+```
+git config receive.denyCurrentBranch ignore
+
+```
+[ref](https://stackoverflow.com/questions/3221859/cannot-push-into-git-repository)
+
+
+
+## Qucik Links
 - [sharing internet over usb](https://stevegrunwell.com/blog/raspberry-pi-zero-share-internet/)

@@ -77,3 +77,4 @@ all my pi have fernando as default password
 [colorful echo ](https://misc.flogisoft.com/bash/tip_colors_and_formatting)
 [custom MOTD](https://www.raspberrypi.org/forums/viewtopic.php?t=23440)
 https://learn.adafruit.com/circuitpython-on-raspberrypi-linux/installing-circuitpython-on-raspberry-pi
+- [need to do this on basic setup](https://www.raspberrypi.org/documentation/remote-access/ssh/passwordless.md)
