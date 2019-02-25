@@ -58,3 +58,4 @@ git config receive.denyCurrentBranch ignore
 
 ## Qucik Links
 - [sharing internet over usb](https://stevegrunwell.com/blog/raspberry-pi-zero-share-internet/)
+- [battery charger](https://electronics.stackexchange.com/questions/298453/understanding-lipo-charging-protection-circuit)
