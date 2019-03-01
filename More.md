@@ -60,3 +60,4 @@ git config receive.denyCurrentBranch ignore
 - [sharing internet over usb](https://stevegrunwell.com/blog/raspberry-pi-zero-share-internet/)
 - [battery charger](https://electronics.stackexchange.com/questions/298453/understanding-lipo-charging-protection-circuit)
 - [chilli](https://www.allrecipes.com/recipe/238386/raspberry-habanero-jam/)
+- [3d model of rapberry](https://grabcad.com/library/raspberry-pi-zero-w-board-1)
