@@ -185,7 +185,7 @@ installVimRc
 installMOTD
 
 ## things that don't need a function
-# sudo apt-get update
-# sudo apt-get upgrade
+sudo apt-get update
+sudo apt-get upgrade
 
-# sudo reboot
+sudo reboot
