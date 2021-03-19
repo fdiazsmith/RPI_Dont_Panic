@@ -81,3 +81,9 @@ https://learn.adafruit.com/circuitpython-on-raspberrypi-linux/installing-circuit
 - [need to do this on basic setup](https://www.raspberrypi.org/documentation/remote-access/ssh/passwordless.md)
 - [removing passphrase to ssh key](https://stackoverflow.com/questions/112396/how-do-i-remove-the-passphrase-for-the-ssh-key-without-having-to-create-a-new-ke)
 - [chilli](https://www.allrecipes.com/recipe/238386/raspberry-habanero-jam/)
+
+
+# breadcrums / improvements
+consider installing a permament helper you get you useful resources. like reminding you how to use you  favorite vim commands. or to intall the basic set up and have access later other nice setups later. like will you be working with a I2C? pam put everything together.
+
+-[this could be a nice library to use](https://github.com/adafruit/Adafruit_Python_Shell/blob/master/adafruit_shell.py)
